@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  pwn:
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /src
+    ### enable syscall for gdb
+    cap_add: 
+      - "SYS_PTRACE"
+    security_opt: 
+      - "seccomp=unconfined"
