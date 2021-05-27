@@ -1,7 +1,11 @@
 FROM ubuntu:20.04
-USER root
 
 ENV PATH $PATH:/bin
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y tzdata
+# timezone setting
+ENV TZ=Asia/Tokyo 
 
 RUN apt-get update && \
     apt-get -y upgrade && \
@@ -24,9 +28,14 @@ RUN apt-get update && \
     python3-pip
 
 RUN gem install one_gadget
-
-RUN git clone https://github.com/longld/peda.git ~/peda && \
-    git clone https://github.com/scwuaptx/Pwngdb.git ~/Pwngdb && \
-    cp ~/Pwngdb/.gdbinit ~/
 RUN python3 -m pip install -U pip
 RUN pip3 install pwntools
+
+RUN adduser ubuntu
+ENV HOME /home/ubuntu
+WORKDIR /home/ubuntu
+COPY func.c /home/ubuntu/
+
+RUN git clone https://github.com/longld/peda.git /home/ubuntu/peda && \
+    git clone https://github.com/scwuaptx/Pwngdb.git /home/ubuntu/Pwngdb && \
+    cp /home/ubuntu/Pwngdb/.gdbinit /home/ubuntu/
