@@ -25,7 +25,9 @@ RUN apt-get update && \
     radare2 \
     ruby \
     git \
-    python3-pip
+    python3-pip \
+    sudo \
+    gcc-multilib
 
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
