@@ -7,8 +7,6 @@ CTFのPwn用のDockerテンプレート
 ```zsh
 docker-compose up
 docker-compose run --user ubuntu --rm pwn
-
-docker-compose down
 ```
 
 ## REF
