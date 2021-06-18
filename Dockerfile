@@ -27,7 +27,8 @@ RUN apt-get update && \
     git \
     python3-pip \
     sudo \
-    gcc-multilib
+    gcc-multilib \
+    uncompyle6
 
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
