@@ -27,17 +27,15 @@ RUN apt-get update && \
     git \
     python3-pip \
     sudo \
-    gcc-multilib \
-    uncompyle6
+    gcc-multilib
 
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
-RUN pip3 install pwntools
+RUN pip3 install pwntools angr uncompyle6
 
 RUN adduser ubuntu
 ENV HOME /home/ubuntu
 WORKDIR /home/ubuntu
-COPY func.c /home/ubuntu/
 
 RUN git clone https://github.com/longld/peda.git /home/ubuntu/peda && \
     git clone https://github.com/scwuaptx/Pwngdb.git /home/ubuntu/Pwngdb && \
