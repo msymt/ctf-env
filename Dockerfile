@@ -28,6 +28,7 @@ RUN apt-get update && \
     python3-pip \
     sudo \
     gcc-multilib
+    netcat 
 
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
