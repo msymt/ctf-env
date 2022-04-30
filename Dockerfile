@@ -5,7 +5,7 @@ ENV PATH $PATH:/bin
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y tzdata
 # timezone setting
-ENV TZ=Asia/Tokyo 
+ENV TZ=Asia/Tokyo
 
 RUN apt-get update && \
     apt-get -y upgrade && \
@@ -19,7 +19,7 @@ RUN apt-get update && \
     gdb \
     ltrace \
     strace \
-    socat \ 
+    socat \
     gcc \
     g++ \
     radare2 \
@@ -30,14 +30,23 @@ RUN apt-get update && \
     gcc-multilib \
     netcat
 
+RUN apt-get update && \
+    apt-get install -y \
+    exiftool
+
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
 RUN pip3 install pwntools angr uncompyle6
 
-RUN adduser ubuntu
+RUN useradd -m -s /bin/bash ubuntu \
+    && echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/ubuntu
+
 ENV HOME /home/ubuntu
 WORKDIR /home/ubuntu
+USER ubuntu
 
 RUN git clone https://github.com/longld/peda.git /home/ubuntu/peda && \
     git clone https://github.com/scwuaptx/Pwngdb.git /home/ubuntu/Pwngdb && \
     cp /home/ubuntu/Pwngdb/.gdbinit /home/ubuntu/
+
+CMD ["bash"]
