@@ -1,6 +1,6 @@
-# ctfPwnEnv
+# ctf env
 
-CTFのPwn用のDockerテンプレート
+CTF用のDockerテンプレート
 
 ## USAGE
 
