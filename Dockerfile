@@ -32,7 +32,9 @@ RUN apt-get update && \
 
 RUN apt-get update && \
     apt-get install -y \
-    exiftool
+    exiftool \
+    steghide \
+    foremost
 
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
