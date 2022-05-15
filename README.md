@@ -17,6 +17,9 @@ docker-compose run --user ubuntu --rm pwn
 # JD-GUI(Java Decompiler Tool)
 wget https://github.com/java-decompiler/jd-gui/releases/download/v1.6.6/jd-gui-1.6.6.jar
 java -jar jd-gui-1.6.6jar
+# stegsolve
+wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
+java -jar stegsolve.jar
 ```
 
 ### Windows

@@ -34,7 +34,8 @@ RUN apt-get update && \
     apt-get install -y \
     exiftool \
     steghide \
-    foremost
+    foremost \
+    pngcheck
 
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
