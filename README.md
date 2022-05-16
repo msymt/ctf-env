@@ -25,6 +25,7 @@ java -jar stegsolve.jar
 ### Windows
 
 - [ILSpy: .NET Decompiler](https://github.com/icsharpcode/ILSpy)
+- [TweakPNG: a low-level utility for examining and modifying PNG image files](http://entropymine.com/jason/tweakpng/)
 
 ## Ref
 
