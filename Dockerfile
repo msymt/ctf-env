@@ -39,7 +39,7 @@ RUN apt-get update && \
 
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
-RUN pip3 install pwntools angr uncompyle6
+RUN pip3 install pwntools angr uncompyle6 decompyle3
 
 RUN useradd -m -s /bin/bash ubuntu \
     && echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/ubuntu
