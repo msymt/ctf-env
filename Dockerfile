@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y tzdata
 # timezone setting
 ENV TZ=Asia/Tokyo
 
+# base tools
 RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get install -y \
@@ -30,6 +31,7 @@ RUN apt-get update && \
     gcc-multilib \
     netcat
 
+# steg
 RUN apt-get update && \
     apt-get install -y \
     exiftool \
@@ -37,9 +39,15 @@ RUN apt-get update && \
     foremost \
     pngcheck
 
+# tor
+RUN apt-get update && \
+    apt-get install -y \
+    torsocks
+
 RUN gem install one_gadget
 RUN python3 -m pip install -U pip
-RUN pip3 install pwntools angr uncompyle6 decompyle3
+# pwn, rev, crypto
+RUN pip3 install pwntools angr uncompyle6 decompyle3 pycrypto
 
 RUN useradd -m -s /bin/bash ubuntu \
     && echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/ubuntu
