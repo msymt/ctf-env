@@ -27,6 +27,24 @@ java -jar stegsolve.jar
 - [ILSpy: .NET Decompiler](https://github.com/icsharpcode/ILSpy)
 - [TweakPNG: a low-level utility for examining and modifying PNG image files](http://entropymine.com/jason/tweakpng/)
 
+## Web-tools
+
+### misc
+
+- [CyberChef](https://gchq.github.io/CyberChef/)
+
+### crypto
+
+- [factordb](http://factordb.com/index.php): prime factorization
+
+### osint
+
+- [virustotal](https://www.virustotal.com/gui/home/upload)
+
+### obfuscation
+
+- [JSFuck](https://enkhee-osiris.github.io/Decoder-JSFuck/)
+
 ## Ref
 
 - https://stackoverflow.com/questions/35860527/warning-error-disabling-address-space-randomization-operation-not-permitted
