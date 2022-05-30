@@ -26,6 +26,7 @@ java -jar stegsolve.jar
 
 - [ILSpy: .NET Decompiler](https://github.com/icsharpcode/ILSpy)
 - [TweakPNG: a low-level utility for examining and modifying PNG image files](http://entropymine.com/jason/tweakpng/)
+- [青い空を見上げればいつもそこに白い猫](https://digitaltravesia.jp/usamimihurricane/webhelp/_RESOURCE/MenuItem/another/anotherAoZoraSiroNeko.html): 汎用ファイルアナライザ
 
 ## Web-tools
 
