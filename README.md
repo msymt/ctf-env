@@ -46,9 +46,3 @@ java -jar stegsolve.jar
 
 - [JSFuck](https://enkhee-osiris.github.io/Decoder-JSFuck/)
 
-## Ref
-
-- https://stackoverflow.com/questions/35860527/warning-error-disabling-address-space-randomization-operation-not-permitted
-- https://qiita.com/chimpan/items/574ad8ad0ac142c71c37
-- https://qiita.com/ponsuke0531/items/9336172e812e7271a966
-- https://qiita.com/niwasawa/items/d89e7cef0c749c6afea6
