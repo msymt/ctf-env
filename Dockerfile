@@ -60,4 +60,9 @@ RUN git clone https://github.com/longld/peda.git /home/ubuntu/peda && \
     git clone https://github.com/scwuaptx/Pwngdb.git /home/ubuntu/Pwngdb && \
     cp /home/ubuntu/Pwngdb/.gdbinit /home/ubuntu/
 
+# WIP
+# RUN git clone https://github.com/zrax/pycdc.git
+# WORKDIR /home/ubuntu/pycdc
+# RUN cmake CMakeLists.txt && make
+
 CMD ["bash"]
