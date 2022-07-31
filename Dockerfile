@@ -49,6 +49,12 @@ RUN python3 -m pip install -U pip
 # pwn, rev, crypto
 RUN pip3 install pwntools angr uncompyle6 decompyle3 pycrypto
 
+# python2.7
+RUN apt update && \
+    apt install -y python2.7
+RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+RUN python2.7 get-pip.py
+
 RUN useradd -m -s /bin/bash ubuntu \
     && echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/ubuntu
 
