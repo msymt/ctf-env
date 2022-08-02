@@ -38,6 +38,7 @@ java -jar stegsolve.jar
 ### crypto
 
 - [factordb](http://factordb.com/index.php): prime factorization
+- [CrackStation](https://crackstation.net/): hash cracker
 
 ### osint
 
