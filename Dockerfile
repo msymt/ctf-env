@@ -76,7 +76,13 @@ RUN pip2 install pycrypto distorm3==3.4.4
 
 WORKDIR /home/ubuntu
 
-# WIP
+### WIP
+# wasm analyze
+# RUN git clone –recursive thttps://github.com/WebAssembly/wabt && git submodule update --init
+# WORKDIR /home/ubuntu/wabt
+# RUN make
+
+# pyc analyze 
 # RUN git clone https://github.com/zrax/pycdc.git
 # WORKDIR /home/ubuntu/pycdc
 # RUN cmake CMakeLists.txt && make
