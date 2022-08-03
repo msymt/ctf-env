@@ -11,6 +11,10 @@ docker-compose run --user ubuntu --rm pwn
 
 ## GUI-tools
 
+### Cross-platform
+
+- [Audacity](https://www.audacityteam.org/): Audio file(.wav, mp3 etc) analyzer
+
 ### Unix / Mac
 
 ```bash
