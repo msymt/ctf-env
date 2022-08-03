@@ -13,7 +13,9 @@ docker-compose run --user ubuntu --rm pwn
 
 ### Cross-platform
 
-- [Audacity](https://www.audacityteam.org/): Audio file(.wav, mp3 etc) analyzer
+- [Audacity](https://www.audacityteam.org/): Audio file(.wav, .mp3 etc) analyzer
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra): software reverse engineering framework
+- [Burp Suite](https://portswigger.net/burp/communitydownload): Application Security Testing Software
 
 ### Unix / Mac
 
