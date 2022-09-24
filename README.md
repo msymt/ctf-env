@@ -57,3 +57,7 @@ java -jar stegsolve.jar
 ## Windows env
 
 - [FLARE VM](https://github.com/mandiant/flare-vm)
+
+## Misc
+
+- [glibc-all-in-one](https://github.com/matrix1001/glibc-all-in-one): glibc binary 
