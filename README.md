@@ -11,6 +11,12 @@ docker-compose run --user ubuntu --rm pwn
 
 ## GUI-tools
 
+### Cross-platform
+
+- [Audacity](https://www.audacityteam.org/): Audio file(.wav, .mp3 etc) analyzer
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra): software reverse engineering framework
+- [Burp Suite](https://portswigger.net/burp/communitydownload): Application Security Testing Software
+
 ### Unix / Mac
 
 ```bash
@@ -24,6 +30,7 @@ java -jar stegsolve.jar
 
 ### Windows
 
+- WinDbg(Windows Debugger)
 - [ILSpy: .NET Decompiler](https://github.com/icsharpcode/ILSpy)
 - [TweakPNG: a low-level utility for examining and modifying PNG image files](http://entropymine.com/jason/tweakpng/)
 - [青い空を見上げればいつもそこに白い猫](https://digitaltravesia.jp/usamimihurricane/webhelp/_RESOURCE/MenuItem/another/anotherAoZoraSiroNeko.html): 汎用ファイルアナライザ
@@ -37,6 +44,7 @@ java -jar stegsolve.jar
 ### crypto
 
 - [factordb](http://factordb.com/index.php): prime factorization
+- [CrackStation](https://crackstation.net/): hash cracker
 
 ### osint
 
@@ -46,9 +54,10 @@ java -jar stegsolve.jar
 
 - [JSFuck](https://enkhee-osiris.github.io/Decoder-JSFuck/)
 
-## Ref
+## Windows env
 
-- https://stackoverflow.com/questions/35860527/warning-error-disabling-address-space-randomization-operation-not-permitted
-- https://qiita.com/chimpan/items/574ad8ad0ac142c71c37
-- https://qiita.com/ponsuke0531/items/9336172e812e7271a966
-- https://qiita.com/niwasawa/items/d89e7cef0c749c6afea6
+- [FLARE VM](https://github.com/mandiant/flare-vm)
+
+## Misc
+
+- [glibc-all-in-one](https://github.com/matrix1001/glibc-all-in-one): glibc binary 
