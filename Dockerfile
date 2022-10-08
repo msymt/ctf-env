@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ENV PATH $PATH:/bin
 
@@ -23,7 +23,6 @@ RUN apt-get update && \
     socat \
     gcc \
     g++ \
-    radare2 \
     ruby \
     git \
     python3-pip \
