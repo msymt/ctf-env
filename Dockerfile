@@ -65,13 +65,13 @@ RUN git clone https://github.com/longld/peda.git /home/ubuntu/peda && \
     git clone https://github.com/scwuaptx/Pwngdb.git /home/ubuntu/Pwngdb && \
     cp /home/ubuntu/Pwngdb/.gdbinit /home/ubuntu/
 
-# volatility
-RUN git clone https://github.com/volatilityfoundation/volatility.git
-WORKDIR /home/ubuntu/volatility
-RUN python2.7 setup.py build install
-RUN apt update -y && \
-    apt install python2.7-dev -y
-RUN pip2 install pycrypto distorm3==3.4.4
+# # volatility
+# RUN git clone https://github.com/volatilityfoundation/volatility.git
+# WORKDIR /home/ubuntu/volatility
+# RUN python2.7 setup.py build install
+# RUN apt update -y && \
+#     apt install python2.7-dev -y
+# RUN pip2 install pycrypto distorm3==3.4.4
 
 WORKDIR /home/ubuntu
 
