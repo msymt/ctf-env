@@ -65,6 +65,9 @@ RUN git clone https://github.com/longld/peda.git /home/ubuntu/peda && \
     git clone https://github.com/scwuaptx/Pwngdb.git /home/ubuntu/Pwngdb && \
     cp /home/ubuntu/Pwngdb/.gdbinit /home/ubuntu/
 
+# install radare2
+RUN git clone https://github.com/radareorg/radare2 && /home/ubuntu/radare2/sys/install.sh
+
 # # volatility
 # RUN git clone https://github.com/volatilityfoundation/volatility.git
 # WORKDIR /home/ubuntu/volatility
