@@ -50,6 +50,7 @@ java -jar stegsolve.jar
 
 - [virustotal](https://www.virustotal.com/gui/home/upload)
 - [censys](https://search.censys.io/)
+- [whoxy](https://www.whoxy.com/)
 
 ### obfuscation
 
