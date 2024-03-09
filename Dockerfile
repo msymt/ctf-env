@@ -28,7 +28,9 @@ RUN apt-get update && \
     python3-pip \
     sudo \
     gcc-multilib \
-    netcat
+    netcat \
+    bsdmainutils \
+    xxd
 
 # steg
 RUN apt-get update && \
